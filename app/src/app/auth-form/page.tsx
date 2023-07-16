@@ -27,6 +27,7 @@ const AuthForm = () => {
       // .matches(/[^\w]/, 'Password requires a symbol')
     }),
     onSubmit: () => {
+      //use formik hendlerSubmit
       submitHandler()
     },
   });
@@ -35,7 +36,6 @@ const AuthForm = () => {
   const [login, setLogin] = useState(true);
 
   async function submitHandler() {
-
 
     const email = emailRef.current?.value;
     const password = passwordRef.current?.value;
